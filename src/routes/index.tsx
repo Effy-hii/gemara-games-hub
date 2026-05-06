@@ -185,9 +185,9 @@ function Index() {
           <div className="grid md:grid-cols-2 gap-8">
             {games.map((g, i) => (
               <article key={i} className="group relative bg-card rounded-3xl overflow-hidden shadow-soft border-2 border-transparent transition-smooth hover:shadow-elegant hover:border-gold/40 hover:-translate-y-1">
-                <div className="relative h-56 sm:h-64 overflow-hidden bg-navy">
-                  <img src={g.img} alt={g.title} loading="lazy" width={1024} height={768} className="w-full h-full object-cover transition-smooth group-hover:scale-105" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-navy-deep/80 via-navy-deep/20 to-transparent" />
+                <div className="relative h-56 sm:h-64 overflow-hidden bg-navy-deep">
+                  <img src={g.img} alt={g.title} loading="lazy" className="w-full h-full object-cover transition-smooth group-hover:scale-105" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-navy-deep/90 via-navy-deep/30 to-transparent" />
                   <div className="absolute bottom-4 right-5 left-5">
                     <h3 className="text-2xl sm:text-3xl font-bold text-cream drop-shadow-lg">{g.title}</h3>
                   </div>
