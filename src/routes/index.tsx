@@ -1,11 +1,11 @@
 import { createFileRoute } from "@tanstack/react-router";
-import heroImg from "@/assets/hero-beit-midrash.jpg";
+import heroImg from "@/assets/hero-students.png";
 import gemaraTexture from "@/assets/gemara-texture.jpg";
 import gameEscape from "@/assets/game-escape.jpg";
 import gameDuel from "@/assets/game-duel.jpg";
-import gameRashi from "@/assets/game-rashi.jpg";
+import gameRashi from "@/assets/game-rashi.png";
 import gameMishnah from "@/assets/game-mishnah.jpg";
-import { BookOpen, Sparkles, Users, Target, Lightbulb, GraduationCap, Layers, Rocket, Phone, ArrowLeft, ScrollText } from "lucide-react";
+import { Sparkles, Users, Target, Lightbulb, GraduationCap, Rocket, Phone, ArrowLeft, ScrollText } from "lucide-react";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -63,12 +63,10 @@ const values = [
 ];
 
 const reasons = [
-  { icon: ScrollText, title: "מורכבות הלימוד", desc: "הגמרא מציבה אתגר ייחודי בשפה, במבנה ובהיגיון של הסוגיה." },
-  { icon: BookOpen, title: "אתגרי שפה ומבנה", desc: "הארמית והמבנה הדיאלוגי דורשים הקניית מיומנויות הדרגתית." },
-  { icon: Users, title: "מעורבות פעילה", desc: "למידה חווייתית מייצרת חיבור עמוק יותר לחומר הנלמד." },
-  { icon: Lightbulb, title: "סקרנות וביטחון", desc: "המשחקים מטפחים סקרנות ובונים ביטחון בלימוד עצמאי." },
-  { icon: Layers, title: "מיומנויות יסוד", desc: "חיזוק שיטתי של היכולות הבסיסיות הנדרשות בלימוד." },
-  { icon: GraduationCap, title: "למידה משמעותית", desc: "הפיכת הלימוד לחוויה זכירה המשפיעה לאורך זמן." },
+  { icon: ScrollText, title: "מורכבות הלימוד", desc: "הגמרא מציבה אתגר ייחודי בשפה, במבנה ובהיגיון של הסוגיה — ודורשת דרכי הוראה שמתאימות לכך." },
+  { icon: Users, title: "מעורבות פעילה", desc: "למידה חווייתית מייצרת חיבור עמוק יותר לחומר ומחזקת את שותפות התלמיד בלימוד." },
+  { icon: Lightbulb, title: "סקרנות וביטחון", desc: "המשחקים מטפחים סקרנות בריאה ובונים ביטחון בלימוד עצמאי של סוגיה." },
+  { icon: GraduationCap, title: "למידה משמעותית", desc: "הפיכת הלימוד לחוויה זכירה ומעצבת — כזו שמשפיעה על התלמיד הרבה אחרי השיעור." },
 ];
 
 function Index() {
