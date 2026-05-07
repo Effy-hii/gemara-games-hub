@@ -1,11 +1,11 @@
 import { createFileRoute } from "@tanstack/react-router";
-import heroImg from "@/assets/hero-beit-midrash.jpg";
+import heroImg from "@/assets/hero-students.png";
 import gemaraTexture from "@/assets/gemara-texture.jpg";
 import gameEscape from "@/assets/game-escape.jpg";
 import gameDuel from "@/assets/game-duel.jpg";
-import gameRashi from "@/assets/game-rashi.jpg";
+import gameRashi from "@/assets/game-rashi.png";
 import gameMishnah from "@/assets/game-mishnah.jpg";
-import { BookOpen, Sparkles, Users, Target, Lightbulb, GraduationCap, Layers, Rocket, Phone, ArrowLeft, ScrollText } from "lucide-react";
+import { Sparkles, Users, Target, Lightbulb, GraduationCap, Rocket, Phone, ArrowLeft, ScrollText } from "lucide-react";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -63,12 +63,10 @@ const values = [
 ];
 
 const reasons = [
-  { icon: ScrollText, title: "מורכבות הלימוד", desc: "הגמרא מציבה אתגר ייחודי בשפה, במבנה ובהיגיון של הסוגיה." },
-  { icon: BookOpen, title: "אתגרי שפה ומבנה", desc: "הארמית והמבנה הדיאלוגי דורשים הקניית מיומנויות הדרגתית." },
-  { icon: Users, title: "מעורבות פעילה", desc: "למידה חווייתית מייצרת חיבור עמוק יותר לחומר הנלמד." },
-  { icon: Lightbulb, title: "סקרנות וביטחון", desc: "המשחקים מטפחים סקרנות ובונים ביטחון בלימוד עצמאי." },
-  { icon: Layers, title: "מיומנויות יסוד", desc: "חיזוק שיטתי של היכולות הבסיסיות הנדרשות בלימוד." },
-  { icon: GraduationCap, title: "למידה משמעותית", desc: "הפיכת הלימוד לחוויה זכירה המשפיעה לאורך זמן." },
+  { icon: ScrollText, title: "מורכבות הלימוד", desc: "הגמרא מציבה אתגר ייחודי בשפה, במבנה ובהיגיון של הסוגיה — ודורשת דרכי הוראה שמתאימות לכך." },
+  { icon: Users, title: "מעורבות פעילה", desc: "למידה חווייתית מייצרת חיבור עמוק יותר לחומר ומחזקת את שותפות התלמיד בלימוד." },
+  { icon: Lightbulb, title: "סקרנות וביטחון", desc: "המשחקים מטפחים סקרנות בריאה ובונים ביטחון בלימוד עצמאי של סוגיה." },
+  { icon: GraduationCap, title: "למידה משמעותית", desc: "הפיכת הלימוד לחוויה זכירה ומעצבת — כזו שמשפיעה על התלמיד הרבה אחרי השיעור." },
 ];
 
 function Index() {
@@ -86,27 +84,23 @@ function Index() {
 
         <div className="relative max-w-7xl mx-auto px-5 sm:px-8 py-16 md:py-24 lg:py-32 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="order-2 lg:order-1 animate-fade-up">
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-sm border border-gold/30 text-sm text-gold-soft mb-6">
-              <Sparkles className="w-4 h-4" />
-              <span>מיזם חינוכי חדשני</span>
-            </div>
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight mb-5">
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-[1.05] mb-6">
               <span className="text-gradient-gold">משחקין דתלמודא</span>
             </h1>
-            <p className="text-xl sm:text-2xl text-cream/90 font-light mb-6 leading-relaxed">
+            <p className="text-xl sm:text-2xl text-cream/90 font-light mb-7 leading-relaxed">
               משחקים דיגיטליים שמרעננים את לימוד הגמרא
             </p>
-            <p className="text-base sm:text-lg text-cream/75 leading-loose mb-8 max-w-xl">
+            <p className="text-base sm:text-lg text-cream/75 leading-loose mb-10 max-w-xl">
               תלמידים רבים זקוקים לדרך חיה, סקרנית ומפעילה כדי להיכנס לעולם הגמרא.
               המיזם <span className="text-gold-soft font-medium">'משחקין דתלמודא'</span> מציע משחקים דיגיטליים חווייתיים שמסייעים להפוך את הלמידה לפעילה, משמעותית ומעוררת מעורבות.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 mb-8">
-              <a href="#games" className="group inline-flex items-center justify-center gap-2 px-8 py-4 rounded-2xl bg-gradient-gold text-navy-deep font-bold text-lg shadow-gold transition-smooth hover:scale-[1.03] hover:shadow-elegant">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-10">
+              <a href="#games" className="group inline-flex items-center justify-center gap-2 px-7 sm:px-8 py-4 rounded-2xl bg-gradient-gold text-navy-deep font-bold text-base sm:text-lg shadow-gold transition-smooth hover:scale-[1.03] hover:shadow-elegant">
                 לצפייה במשחקים
                 <ArrowLeft className="w-5 h-5 transition-transform group-hover:-translate-x-1" />
               </a>
-              <a href="#contact" className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-2xl border-2 border-gold/50 text-cream font-semibold text-lg backdrop-blur-sm transition-smooth hover:bg-gold/10 hover:border-gold">
+              <a href="#contact" className="inline-flex items-center justify-center gap-2 px-7 sm:px-8 py-4 rounded-2xl border-2 border-gold/50 text-cream font-semibold text-base sm:text-lg backdrop-blur-sm transition-smooth hover:bg-gold/10 hover:border-gold">
                 ליצירת קשר
               </a>
             </div>
@@ -121,12 +115,12 @@ function Index() {
             </div>
           </div>
 
-          <div className="order-1 lg:order-2 animate-fade-up" style={{ animationDelay: "0.2s" }}>
+          <div className="order-1 lg:order-2 animate-fade-up" style={{ animationDelay: "0.15s" }}>
             <div className="relative">
-              <div className="absolute -inset-4 bg-gradient-gold opacity-30 rounded-3xl blur-2xl animate-glow-pulse" aria-hidden />
-              <div className="relative rounded-3xl overflow-hidden shadow-elegant border border-gold/20">
-                <img src={heroImg} alt="אווירת בית מדרש" width={1280} height={1280} className="w-full h-full object-cover" />
-                <div className="absolute inset-0 bg-gradient-to-t from-navy-deep/60 via-transparent to-transparent" />
+              <div className="absolute -inset-4 bg-gradient-gold opacity-25 rounded-[2rem] blur-2xl animate-glow-pulse" aria-hidden />
+              <div className="relative rounded-[2rem] overflow-hidden shadow-elegant border border-gold/20 aspect-[4/3]">
+                <img src={heroImg} alt="תלמידים לומדים גמרא יחד עם משחק דיגיטלי על מחשב נייד" className="w-full h-full object-cover" />
+                <div className="absolute inset-0 bg-gradient-to-tr from-navy-deep/40 via-transparent to-gold/5 pointer-events-none" />
               </div>
             </div>
           </div>
@@ -152,16 +146,16 @@ function Index() {
             </p>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid sm:grid-cols-2 gap-6 lg:gap-8 max-w-5xl mx-auto">
             {reasons.map((r, i) => (
-              <div key={i} className="group relative bg-card rounded-3xl p-7 shadow-soft border border-border/50 transition-smooth hover:-translate-y-1 hover:shadow-elegant">
-                <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-glow opacity-0 group-hover:opacity-100 transition-smooth rounded-3xl" aria-hidden />
+              <div key={i} className="group relative bg-card rounded-3xl p-8 sm:p-9 shadow-soft border border-border/50 transition-smooth hover:-translate-y-1 hover:shadow-elegant">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-glow opacity-0 group-hover:opacity-100 transition-smooth rounded-3xl" aria-hidden />
                 <div className="relative">
-                  <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-gold text-navy-deep mb-4 shadow-soft">
-                    <r.icon className="w-6 h-6" />
+                  <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-gradient-gold text-navy-deep mb-5 shadow-soft">
+                    <r.icon className="w-7 h-7" />
                   </div>
-                  <h3 className="text-xl font-bold text-navy-deep mb-2">{r.title}</h3>
-                  <p className="text-muted-foreground leading-relaxed">{r.desc}</p>
+                  <h3 className="text-2xl font-bold text-navy-deep mb-3">{r.title}</h3>
+                  <p className="text-muted-foreground leading-relaxed text-base">{r.desc}</p>
                 </div>
               </div>
             ))}

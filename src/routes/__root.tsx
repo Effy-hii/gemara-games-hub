@@ -29,14 +29,13 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "משחקין דתלמודא — משחקים דיגיטליים ללימוד גמרא" },
+      { name: "description", content: "מיזם חינוכי ללימוד גמרא ותורה שבעל פה באמצעות משחקים דיגיטליים חווייתיים — חוויית למידה פעילה, סקרנית ומשמעותית לתלמידים ולמורים." },
+      { name: "author", content: "הרב אפרים שרם" },
+      { property: "og:title", content: "משחקין דתלמודא" },
+      { property: "og:description", content: "משחקים דיגיטליים שמרעננים את לימוד הגמרא — מיזם חינוכי בהובלת הרב אפרים שרם." },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
       {
