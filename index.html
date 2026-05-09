@@ -77,6 +77,24 @@
         pointer-events: none;
       }
 
+      .supervision-logo {
+        position: absolute;
+        left: 16px;
+        top: 16px;
+        z-index: 2;
+        padding: 8px 12px;
+        border-radius: 12px;
+        background: rgba(255, 255, 255, 0.92);
+        box-shadow: var(--shadow-soft);
+        backdrop-filter: blur(8px);
+      }
+
+      .supervision-logo img {
+        display: block;
+        width: clamp(176px, 22vw, 256px);
+        height: auto;
+      }
+
       .wrap {
         width: min(1180px, calc(100% - 32px));
         margin: 0 auto;
@@ -394,10 +412,20 @@
       }
 
       @media (max-width: 820px) {
+        .supervision-logo {
+          left: 12px;
+          top: 12px;
+          padding: 7px 10px;
+        }
+
+        .supervision-logo img {
+          width: min(44vw, 180px);
+        }
+
         .hero-inner {
           grid-template-columns: 1fr;
           min-height: auto;
-          padding: 44px 0 60px;
+          padding: 86px 0 60px;
         }
 
         .hero-text {
@@ -449,6 +477,9 @@
   <body>
     <header class="hero">
       <div class="texture"></div>
+      <div class="supervision-logo">
+        <img src="assets/logo-transparent.png" alt="לוגו הפיקוח על הוראת תלמוד ותושב״ע" />
+      </div>
       <div class="wrap hero-inner">
         <div class="hero-text">
           <h1><span class="gold-text">משחקין דתלמודא</span></h1>
