@@ -5,6 +5,7 @@ import gameEscape from "@/assets/game-escape.jpg";
 import gameDuel from "@/assets/game-duel.jpg";
 import gameRashi from "@/assets/game-rashi.png";
 import gameMishnah from "@/assets/game-mishnah.jpg";
+import supervisionLogo from "@/assets/logo-transparent.png";
 import { Sparkles, Users, Target, Lightbulb, GraduationCap, Rocket, Phone, ArrowLeft, ScrollText } from "lucide-react";
 
 export const Route = createFileRoute("/")({
@@ -81,6 +82,13 @@ function Index() {
         />
         <div className="absolute -top-40 -left-40 w-[500px] h-[500px] bg-gradient-glow animate-glow-pulse" aria-hidden />
         <div className="absolute -bottom-40 -right-40 w-[600px] h-[600px] bg-gradient-glow animate-glow-pulse" style={{ animationDelay: "2s" }} aria-hidden />
+        <div className="absolute left-4 top-4 z-20 rounded-xl bg-white/92 px-3 py-2 shadow-soft backdrop-blur-sm sm:left-6 sm:top-6 sm:px-4">
+          <img
+            src={supervisionLogo}
+            alt="לוגו הפיקוח על הוראת תלמוד ותושב״ע"
+            className="h-auto w-44 sm:w-56 lg:w-64"
+          />
+        </div>
 
         <div className="relative max-w-7xl mx-auto px-5 sm:px-8 py-16 md:py-24 lg:py-32 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="order-2 lg:order-1 animate-fade-up">
